@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "dist/src/index.js",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "npx ts-node src/index.ts",
-    "dev": "nodemon --exec ts-node src/index.ts",
+    "start": "npx ts-node --esm src/index.ts",
+    "dev": "nodemon --exec ts-node --esm src/index.ts",
     "lint": "eslint . --ignore-path .gitignore --ext .js,.ts,.jsx,.ts",
     "lint:fix": "eslint . --ignore-path .gitignore --fix --ext .js,.ts,.jsx,"
   },
